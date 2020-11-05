@@ -45,16 +45,7 @@ keyword_check('lol')
 # пример2: get_type(42) возвращает "Это словарь."
 
 def get_type(obj):
-    types_dictionaries = {
-      'int': 'число',
-      'str': 'строка',
-      'bool': 'булевый',
-      'Nonetype': 'None',
-      'list': 'список',
-      'tuple': 'кортеж',
-      'set': 'множество',
-      'dict': 'словарь'  
-    }
+    types_dictionaries = {'int': 'число', 'str': 'строка', 'bool': 'булевый', 'Nonetype': 'None', 'list': 'список', 'tuple': 'кортеж', 'set': 'множество', 'dict': 'словарь'}
     print("Это " + types_dictionaries[type(obj).__name__])
 
 get_type(32)
