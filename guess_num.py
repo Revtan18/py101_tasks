@@ -13,6 +13,25 @@
 
 Тебе может понадобится модуль random, цикл while и ветвления
 """
+import random
 
 if __name__ == '__main__':
-    pass
+    t = 0
+    r = random.randint(0, 3)
+    attempt = 0
+while True:
+    user_num = input('Тебе нужно разгадать число от 1 до 1000001. Дерзай:')
+    if 'exit' in user_num:
+        print("Уже уходишь? Видимо ты ещё не обладаешь терпением программиста...")
+        break
+    elif user_num.isdigit() == True:
+        attempt += 1
+        if int(user_num) == r:
+            print('Кайф, всё сошлось.', 'Количество попыток - ', attempt)
+            break
+        elif int(user_num) > r:
+            print('Слишком много, дай меньше')
+        else:
+            print('Слишком мало, дай больше')
+    else:
+        print ('Ты играешь не по правилам! нам нужно число')
