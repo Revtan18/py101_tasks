@@ -22,4 +22,3 @@ biggest_number = 45
 # создай константу для хранения числа Пи и запиши в неё первые 10 знаков
 import math
 pi = round(math.pi, 10)
-print(pi)
