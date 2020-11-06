@@ -21,7 +21,7 @@ if __name__ == '__main__':
     attempt = 0
 while True:
     user_num = input('Тебе нужно разгадать число от 1 до 1000001. Дерзай:')
-    if 'exit' in user_num:
+    if 'exit' or '' in user_num:
         print("Уже уходишь? Видимо ты ещё не обладаешь терпением программиста...")
         break
     elif user_num.isdigit() == True:
